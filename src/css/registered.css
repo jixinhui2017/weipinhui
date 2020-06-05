@@ -1,0 +1,193 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li,
+ol {
+  list-style: none; }
+
+body .c-head {
+  height: 100px; }
+  body .c-head .head-inner {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto; }
+  body .c-head .logo {
+    float: left; }
+    body .c-head .logo .logo-inner {
+      background-image: url(../img/registertd/唯品会.png);
+      background-position: -308px -57px;
+      width: 125px;
+      height: 100px;
+      display: inline-block;
+      vertical-align: top;
+      line-height: 500px;
+      overflow: hidden; }
+  body .c-head .c-service {
+    background-image: url(../img/registertd/唯品会.png);
+    background-position: 0 0;
+    width: 304px;
+    height: 100px;
+    float: right; }
+body .content {
+  height: 650px;
+  background-image: url(../img/registertd/品牌特卖.jpg);
+  background-position-x: -200px;
+  position: relative; }
+  body .content .content-inner {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px 20px;
+    min-height: 550px;
+    width: 1000px; }
+    body .content .content-inner ::after {
+      content: ".";
+      display: block;
+      height: 0;
+      overflow: hidden;
+      clear: both;
+      visibility: hidden; }
+    body .content .content-inner .c-register {
+      width: 360px;
+      border-radius: 2px;
+      background-color: #fff;
+      float: right; }
+      body .content .content-inner .c-register ::after {
+        content: ".";
+        display: block;
+        height: 0;
+        overflow: hidden;
+        clear: both;
+        visibility: hidden; }
+      body .content .content-inner .c-register .register-header {
+        padding-right: 30px;
+        padding-left: 30px;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #e0e0e0;
+        overflow: hidden; }
+        body .content .content-inner .c-register .register-header .header-title-right {
+          float: right;
+          font-size: 14px; }
+        body .content .content-inner .c-register .register-header .header-title-left {
+          font-size: 18px;
+          color: #666;
+          display: block;
+          line-height: 50px; }
+      body .content .content-inner .c-register .register-body {
+        padding: 30px; }
+        body .content .content-inner .c-register .register-body ::after {
+          content: ".";
+          display: block;
+          height: 0;
+          overflow: hidden;
+          clear: both;
+          visibility: hidden; }
+        body .content .content-inner .c-register .register-body .register-form {
+          width: 300px;
+          height: 67px;
+          margin-bottom: 5px;
+          position: relative; }
+          body .content .content-inner .c-register .register-body .register-form span {
+            width: 20px;
+            height: 20px;
+            background-image: url(../img/registertd/唯品会.png);
+            position: absolute;
+            top: 13px;
+            left: 11px; }
+          body .content .content-inner .c-register .register-body .register-form input {
+            width: 250px;
+            height: 32px;
+            padding: 6px 10px 6px 40px;
+            border: 1px solid #b2b2b2;
+            outline: none;
+            border-radius: 2px; }
+            body .content .content-inner .c-register .register-body .register-form input:hover {
+              border: 1px solid #5f5f5f; }
+          body .content .content-inner .c-register .register-body .register-form .ver_code {
+            width: 106px;
+            height: 32px;
+            padding: 6px 10px 6px 40px;
+            margin-right: 10px; }
+          body .content .content-inner .c-register .register-body .register-form button {
+            float: right;
+            width: 128px;
+            height: 44px;
+            padding: 0px 12px 1px;
+            border: none;
+            cursor: pointer;
+            background-color: #d0d0d0;
+            border: 1px solid #d0d0d0;
+            color: #999; }
+            body .content .content-inner .c-register .register-body .register-form button:hover {
+              background-color: #fcedf2;
+              border: 1px solid #ffbee0;
+              color: #e00078; }
+        body .content .content-inner .c-register .register-body .protocol {
+          width: 298px;
+          height: 55px;
+          position: relative; }
+          body .content .content-inner .c-register .register-body .protocol .option {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 19px;
+            height: 16px;
+            background-image: url(../img/registertd/sprite.png);
+            background-position: 40px 0px;
+            display: inline-block;
+            text-align: left;
+            cursor: pointer; }
+            body .content .content-inner .c-register .register-body .protocol .option:hover {
+              background-position: -24px -21px; }
+          body .content .content-inner .c-register .register-body .protocol .opt_content {
+            width: 275px;
+            height: 32px;
+            display: inline-block;
+            line-height: 18px;
+            color: #333333;
+            margin-left: 19px;
+            font-size: 12px;
+            text-align: left; }
+            body .content .content-inner .c-register .register-body .protocol .opt_content p {
+              float: left; }
+            body .content .content-inner .c-register .register-body .protocol .opt_content a {
+              color: #1d94d1;
+              float: left; }
+              body .content .content-inner .c-register .register-body .protocol .opt_content a:hover {
+                color: #3cbdff; }
+        body .content .content-inner .c-register .register-body .rule {
+          width: 300px;
+          height: 19px;
+          color: #d82323;
+          font-size: 12px; }
+        body .content .content-inner .c-register .register-body .register {
+          width: 300px;
+          height: 42px;
+          text-align: center;
+          color: white;
+          cursor: pointer;
+          background-color: #b35555;
+          margin-top: 4px;
+          background-color: #f10180;
+          border: 1px solid #f10180;
+          font-size: 16px;
+          line-height: 42px;
+          border-radius: 2px; }
+          body .content .content-inner .c-register .register-body .register:hover {
+            background-color: #f43499;
+            border: 1px solid #f43499; }
+body .footer {
+  height: 78px; }
+  body .footer p {
+    width: 1000px;
+    line-height: 78px;
+    text-align: center;
+    margin: 0 auto;
+    color: #666; }
+
+/*# sourceMappingURL=registered.css.map */

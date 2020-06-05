@@ -1,0 +1,261 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li,
+ol {
+  list-style: none; }
+
+body .c-head {
+  height: 100px; }
+  body .c-head .head-inner {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto; }
+  body .c-head .logo {
+    float: left; }
+    body .c-head .logo .logo-inner {
+      background-image: url(../img/registertd/唯品会.png);
+      background-position: -308px -57px;
+      width: 125px;
+      height: 100px;
+      display: inline-block;
+      vertical-align: top;
+      line-height: 500px;
+      overflow: hidden; }
+  body .c-head .c-service {
+    background-image: url(../img/registertd/唯品会.png);
+    background-position: 0 0;
+    width: 304px;
+    height: 100px;
+    float: right; }
+body .content {
+  height: 650px;
+  background-image: url(../img/registertd/品牌特卖.jpg);
+  background-position-x: -200px;
+  position: relative; }
+  body .content .c_login {
+    width: 360px;
+    height: 436px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 260px; }
+    body .content .c_login .c_login_header {
+      height: 50px;
+      color: #666;
+      border: 1px solid #e0e0e0; }
+      body .content .c_login .c_login_header :hover {
+        color: #f10180; }
+      body .content .c_login .c_login_header .scan_code_login {
+        width: 49%;
+        height: 50px;
+        display: inline-block;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        position: relative; }
+        body .content .c_login .c_login_header .scan_code_login span {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          color: #ccc; }
+      body .content .c_login .c_login_header .account_login {
+        width: 49%;
+        height: 50px;
+        display: inline-block;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer; }
+    body .content .c_login .c_login_content_code {
+      height: 192px;
+      padding-top: 36px;
+      position: relative;
+      display: block; }
+      body .content .c_login .c_login_content_code:hover .qr_code {
+        transform: translateX(-60px); }
+      body .content .c_login .c_login_content_code:hover .app_loca {
+        display: block; }
+      body .content .c_login .c_login_content_code .qr_code {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        border: 1px solid #f0f0f0;
+        margin: 0 auto;
+        background-image: url(../img/login/qr_code.png);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        transition: all .3s; }
+      body .content .c_login .c_login_content_code .app_loca {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        width: 120px;
+        height: 192px;
+        background-image: url(../img/registertd/唯品会.png);
+        background-position: -2px -100px;
+        display: none;
+        transition: all .5s; }
+      body .content .c_login .c_login_content_code .c_text {
+        width: 100%;
+        height: 16px;
+        margin-top: 20px;
+        line-height: 16px;
+        font-size: 12px;
+        text-align: center;
+        position: relative; }
+        body .content .c_login .c_login_content_code .c_text p {
+          position: absolute;
+          background-image: url(../img/registertd/唯品会.png);
+          width: 16px;
+          height: 16px;
+          background-position: -605px -121px;
+          display: inline-block;
+          top: 0px;
+          left: 54px; }
+        body .content .c_login .c_login_content_code .c_text span {
+          color: #f10180; }
+    body .content .c_login .c_login_content_account {
+      width: 300px;
+      height: 221px;
+      padding: 50px 30px 0px;
+      display: none; }
+      body .content .c_login .c_login_content_account .input {
+        width: 300px;
+        height: 67px;
+        position: relative; }
+        body .content .c_login .c_login_content_account .input span {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 14px;
+          left: 12px;
+          background-image: url(../img/registertd/唯品会.png); }
+        body .content .c_login .c_login_content_account .input input {
+          width: 248px;
+          height: 32px;
+          padding: 6px 10px 6px 40px;
+          border: 1px solid #b2b2b2;
+          outline: none;
+          border-radius: 2px; }
+          body .content .c_login .c_login_content_account .input input:hover {
+            border: 1px solid #5f5f5f; }
+        body .content .c_login .c_login_content_account .input .get_code {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          width: 110px;
+          font-size: 14px;
+          height: 45px;
+          line-height: 44px;
+          border: none;
+          outline: none;
+          color: #999;
+          background: #d0d0d0;
+          display: none;
+          border-radius: 2px; }
+          body .content .c_login .c_login_content_account .input .get_code:hover {
+            background-color: #f43499;
+            border-color: #f43499;
+            color: #fff; }
+        body .content .c_login .c_login_content_account .input p {
+          font-size: 12px;
+          color: #ec5042;
+          display: none; }
+      body .content .c_login .c_login_content_account .prompt {
+        widows: 300px;
+        height: 19px;
+        padding-bottom: 22px; }
+        body .content .c_login .c_login_content_account .prompt .mes_login {
+          font-size: 14px;
+          cursor: pointer; }
+          body .content .c_login .c_login_content_account .prompt .mes_login:hover {
+            color: #f10180; }
+        body .content .c_login .c_login_content_account .prompt .forget_pwd {
+          float: right;
+          font-size: 12px;
+          line-height: 19px;
+          cursor: pointer; }
+          body .content .c_login .c_login_content_account .prompt .forget_pwd:hover {
+            color: #f10180; }
+      body .content .c_login .c_login_content_account .login {
+        width: 298px;
+        height: 44px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 44px;
+        color: white;
+        border-radius: 2px;
+        background-color: #f10180;
+        border: 1px solid #f10180;
+        cursor: pointer;
+        outline: none; }
+        body .content .c_login .c_login_content_account .login:hover {
+          background-color: #f43499;
+          border-color: #f43499; }
+    body .content .c_login .c_foot {
+      width: 300px;
+      height: 119px;
+      padding: 0px 30px; }
+      body .content .c_login .c_foot .c_footer {
+        width: 300px;
+        height: 74px;
+        padding: 30px 0px 15px; }
+        body .content .c_login .c_foot .c_footer .wechat {
+          width: 300px;
+          height: 40px;
+          margin-bottom: 10px; }
+          body .content .c_login .c_foot .c_footer .wechat .wechat_box {
+            width: 60px;
+            height: 40px;
+            margin: 0 auto; }
+            body .content .c_login .c_foot .c_footer .wechat .wechat_box .wechat_img {
+              background-image: url(../img/registertd/唯品会.png);
+              background-position: -580px -161px;
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              position: relative;
+              z-index: 3; }
+        body .content .c_login .c_foot .c_footer .mode {
+          width: 310px;
+          height: 24px; }
+          body .content .c_login .c_foot .c_footer .mode ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around; }
+            body .content .c_login .c_foot .c_footer .mode ul li {
+              line-height: 24px;
+              text-align: center;
+              transition: all 0.5s; }
+              body .content .c_login .c_foot .c_footer .mode ul li:first-child {
+                color: #999999; }
+              body .content .c_login .c_foot .c_footer .mode ul li:nth-child(4) {
+                color: #999999; }
+                body .content .c_login .c_foot .c_footer .mode ul li:nth-child(4):hover {
+                  color: #333333; }
+              body .content .c_login .c_foot .c_footer .mode ul li:nth-child(2), body .content .c_login .c_foot .c_footer .mode ul li:nth-child(3) {
+                color: #333333; }
+                body .content .c_login .c_foot .c_footer .mode ul li:nth-child(2):hover, body .content .c_login .c_foot .c_footer .mode ul li:nth-child(3):hover {
+                  color: #f10180; }
+              body .content .c_login .c_foot .c_footer .mode ul li:last-child {
+                font-size: 14px;
+                cursor: pointer; }
+                body .content .c_login .c_foot .c_footer .mode ul li:last-child:hover {
+                  color: #f10180; }
+body .footer {
+  height: 78px; }
+  body .footer p {
+    width: 1000px;
+    line-height: 78px;
+    text-align: center;
+    margin: 0 auto;
+    color: #666; }
+
+/*# sourceMappingURL=login.css.map */
