@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -254,130 +255,307 @@ body {
           cursor: default;
           font-weight: 700;
           color: #f10180; }
-  body .banner {
-    height: 502px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 43px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-image: url(../img/index/index-content.jpg);
-    padding-bottom: 20px; }
-  body .ad {
-    width: 1170px;
-    margin: 0 auto; }
-    body .ad ::after {
-      content: '.';
-      height: 0;
-      display: block;
-      clear: both;
-      visibility: hidden; }
-    body .ad img {
-      width: 100%; }
-    body .ad .ad-bottom {
-      width: 1170px;
-      margin: 0 auto; }
-      body .ad .ad-bottom .operation-item {
-        width: 378px;
-        height: 250px;
-        padding: 0 12px 18px 0;
-        float: left; }
-  body .today-new {
-    width: 1170px;
-    height: 68px;
+  body .content .content_inner {
+    width: 1000px;
+    height: 634px;
     margin: 0 auto;
-    margin-bottom: 30px; }
-    body .today-new img {
-      position: relative;
-      left: 50%;
-      margin-left: -585px;
-      top: 0; }
-  body .short-shop-title {
-    width: 1170px;
-    height: 44px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    min-height: 43px;
-    border-bottom: 1px #1a1a1a solid;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  body .content .magnifier {
+    width: 420px;
+    height: 538px;
+    border-bottom: 1px #e2e2e2 dashed;
     position: relative; }
-  body .pingpai-goods {
-    width: 1200px;
-    margin: 0 auto; }
-    body .pingpai-goods ::after {
-      content: '.';
-      height: 0;
-      display: block;
-      clear: both;
-      visibility: hidden; }
-    body .pingpai-goods .brand-item {
-      width: 567px;
-      height: 370px;
-      margin-right: 28px;
+    body .content .magnifier .big_img {
+      width: 420px;
+      height: 420px;
       display: inline-block; }
-      body .pingpai-goods .brand-item .brand-img {
-        width: 567px;
-        height: 273px; }
-        body .pingpai-goods .brand-item .brand-img :hover {
-          animation: blink 1s;
-          box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-      body .pingpai-goods .brand-item .brangd-info {
-        position: relative;
-        padding-left: 10px;
-        background-color: #fff; }
-        body .pingpai-goods .brand-item .brangd-info .brand-name {
-          margin-top: 18px;
-          cursor: pointer;
-          font-family: MicrosoftYaHei;
-          font-weight: 700;
-          font-size: 18px;
-          color: #333;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 455px;
-          display: block; }
-        body .pingpai-goods .brand-item .brangd-info .brand-discount-pms {
-          line-height: 32px;
+      body .content .magnifier .big_img .mirror {
+        width: 100px;
+        height: 100px;
+        background-color: #080808;
+        opacity: 0.2;
+        position: absolute; }
+    body .content .magnifier .blow_up {
+      width: 420px;
+      height: 420px;
+      background-color: #879bf1;
+      position: absolute;
+      top: 0px;
+      left: 420px;
+      z-index: 2; }
+    body .content .magnifier .small_div {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: #dddddd;
+      opacity: 0.6; }
+    body .content .magnifier .inner_img {
+      width: 420px;
+      height: 420px;
+      background-color: #0e0750;
+      position: absolute;
+      top: 0px;
+      left: 420px; }
+    body .content .magnifier .com_deta {
+      width: 419px;
+      height: 64px;
+      display: flex;
+      justify-content: space-between; }
+      body .content .magnifier .com_deta img {
+        width: 62px;
+        height: 62px; }
+    body .content .magnifier .product_text {
+      width: 420px;
+      height: 23px;
+      padding: 12px 0px;
+      position: relative; }
+      body .content .magnifier .product_text .commodity_code {
+        color: #999;
+        display: inline; }
+      body .content .magnifier .product_text p {
+        margin-left: 18px;
+        display: inline;
+        color: #999999; }
+      body .content .magnifier .product_text .share {
+        width: 95px;
+        height: 22px;
+        border: solid 1px #c2c2c2;
+        border-radius: 2px;
+        cursor: pointer;
+        position: absolute;
+        color: #333;
+        font-size: 12px;
+        top: 13px;
+        right: 0px;
+        padding: 0px 9px;
+        background-color: #fafafa;
+        outline: none; }
+        body .content .magnifier .product_text .share .reverse_arrow {
+          width: 15px;
+          height: 12px;
+          display: inline-block;
+          background-image: url(../img/product_details/标签_02.png);
+          background-position: -16px -19px; }
+  body .content .buy_deta {
+    width: 550px;
+    height: 538px;
+    border-bottom: 1px #e2e2e2 dashed; }
+    body .content .buy_deta .goods_title {
+      margin-bottom: 10px; }
+      body .content .buy_deta .goods_title .shop {
+        width: 340px;
+        height: 22px;
+        line-height: 22px;
+        color: #777578; }
+      body .content .buy_deta .goods_title .goods_deta {
+        width: 550px;
+        height: 20px;
+        line-height: 20px;
+        margin: 8px 0px; }
+      body .content .buy_deta .goods_title .goods_description {
+        font-size: 14px;
+        color: #999999; }
+    body .content .buy_deta .pic {
+      width: 550px;
+      height: 70px;
+      background-color: #ebd6e9;
+      padding-bottom: 15px;
+      margin-bottom: 20px; }
+      body .content .buy_deta .pic i {
+        color: #f43499;
+        font-size: 20px;
+        font-style: normal;
+        vertical-align: bottom; }
+      body .content .buy_deta .pic b {
+        font-size: 48px;
+        color: #f43499;
+        font-weight: normal; }
+      body .content .buy_deta .pic span {
+        font-size: 16px;
+        color: #999; }
+      body .content .buy_deta .pic .original_price {
+        padding: 0px 10px;
+        text-decoration: line-through; }
+    body .content .buy_deta .information {
+      width: 550px; }
+      body .content .buy_deta .information .add {
+        width: 550px;
+        height: 32px;
+        margin-bottom: 5px; }
+        body .content .buy_deta .information .add span {
+          width: 40px;
           height: 32px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap; }
-          body .pingpai-goods .brand-item .brangd-info .brand-discount-pms .brand-discount {
-            color: #4d4d4d;
-            font-size: 16px;
-            margin-right: 10px;
-            font-family: MicrosoftYaHei;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+          line-height: 32px;
+          display: inline-block;
+          margin: 0 auto;
+          color: #999999; }
+        body .content .buy_deta .information .add p {
+          width: 205px;
+          height: 30px;
+          line-height: 30px;
+          padding: 0px 35px 0px 10px;
+          display: inline-block;
+          border: 1px solid #ccc; }
+      body .content .buy_deta .information .size {
+        width: 539px;
+        height: 40px;
+        padding: 12px 11px 0px;
+        margin-left: -11px; }
+        body .content .buy_deta .information .size span {
+          position: relative;
+          top: 0px;
+          left: 0px;
+          width: 40px;
+          height: 32px;
+          line-height: 32px;
+          display: inline-block;
+          margin: 0 auto;
+          color: #999999; }
+        body .content .buy_deta .information .size .size_num {
+          position: relative;
+          top: -30px;
+          left: 42px; }
+          body .content .buy_deta .information .size .size_num li {
+            width: 30px;
+            height: 26px;
+            line-height: 26px;
+            padding: 0px 20px;
+            text-align: center;
+            margin: 0px 10px 10px 0px;
+            border: 1px solid #ccc;
             display: inline-block;
-            line-height: 32px; }
-            body .pingpai-goods .brand-item .brangd-info .brand-discount-pms .brand-discount .salebg2 {
-              font-family: Arial;
-              font-size: 18px;
-              color: #f10582;
-              margin-right: 3px;
-              font-weight: 700; }
-  body .shop-sort-ft {
-    border-top: 1px solid #e8e8e8;
-    width: 1170px;
-    margin: 0 auto;
-    margin-top: 10px; }
-    body .shop-sort-ft a {
-      width: 324px;
-      display: block;
-      color: #fff;
-      height: 44px;
-      background-color: #f10180;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      font-size: 16px;
-      text-align: center;
-      line-height: 44px;
-      margin: -1px auto 20px; }
+            cursor: pointer; }
+      body .content .buy_deta .information .piece {
+        width: 540px;
+        height: 30px;
+        padding: 10px;
+        margin-left: -10px; }
+        body .content .buy_deta .information .piece span {
+          width: 40px;
+          height: 32px;
+          line-height: 32px;
+          display: inline-block;
+          margin: 0 auto;
+          color: #999999; }
+        body .content .buy_deta .information .piece dd {
+          width: 75px;
+          height: 30px;
+          border: 1px solid #ccc;
+          display: inline-block;
+          position: relative; }
+          body .content .buy_deta .information .piece dd div {
+            display: inline-block;
+            background-color: #f9f8f8;
+            color: #dad8d8;
+            width: 21px;
+            height: 30px;
+            text-align: center;
+            line-height: 28px;
+            color: #7d7c7c;
+            cursor: pointer; }
+          body .content .buy_deta .information .piece dd em {
+            width: 23px;
+            height: 28px;
+            line-height: 28px;
+            font-style: normal;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            top: 2px;
+            left: 25px; }
+          body .content .buy_deta .information .piece dd .piece_reduce {
+            cursor: not-allowed;
+            margin-right: 30px; }
+          body .content .buy_deta .information .piece dd .piece_add {
+            position: absolute;
+            top: 0px;
+            right: 0px; }
+      body .content .buy_deta .information .add_shopbig {
+        width: 510px;
+        height: 46px;
+        margin: 20px 0px 12px 40px; }
+        body .content .buy_deta .information .add_shopbig .add_goods {
+          width: 198px;
+          height: 44px;
+          background-color: #f10180;
+          border: 1px solid #f10180;
+          border-radius: 3px;
+          outline: 0;
+          line-height: 44px;
+          vertical-align: auto;
+          color: #ffffff;
+          font-size: 18px; }
+          body .content .buy_deta .information .add_shopbig .add_goods img {
+            width: 30px;
+            height: 30px;
+            margin-top: 7px; }
+          body .content .buy_deta .information .add_shopbig .add_goods span {
+            position: relative;
+            top: -9px;
+            left: 0px; }
+      body .content .buy_deta .information .tips {
+        width: 510px;
+        height: 24px;
+        line-height: 24px;
+        color: #999;
+        margin-left: 40px;
+        margin-bottom: 30px; }
+        body .content .buy_deta .information .tips span {
+          color: #f62e99; }
+  body .content .content_last {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between; }
+    body .content .content_last .goods_promise {
+      width: 420px;
+      height: 27px;
+      padding: 15px 0px;
+      display: flex;
+      justify-content: space-between; }
+      body .content .content_last .goods_promise div {
+        width: 49%;
+        height: 27px;
+        display: inline-block;
+        text-align: center; }
+        body .content .content_last .goods_promise div i {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          background-image: url(../img/product_details/标签_01.png);
+          background-position: 33px -100px; }
+        body .content .content_last .goods_promise div span {
+          color: #bcb7ba;
+          margin-left: 15px;
+          font-size: 14px;
+          position: relative;
+          top: -10px;
+          left: 0px; }
+        body .content .content_last .goods_promise div .shield {
+          background-position: 33px -66px; }
+    body .content .content_last .goods_service {
+      width: 550px;
+      height: 63px;
+      padding-top: 10px; }
+      body .content .content_last .goods_service .customer_service {
+        width: 550px;
+        height: 33px;
+        color: #999999; }
+        body .content .content_last .goods_service .customer_service .message_img {
+          width: 18px;
+          height: 16px;
+          display: inline-block;
+          background-image: url(../img/product_details/message.gif); }
+        body .content .content_last .goods_service .customer_service span {
+          color: #f10180;
+          text-decoration: underline; }
+        body .content .content_last .goods_service .customer_service .service_time {
+          margin-left: 6px;
+          color: #999; }
   body .footer {
     font: 12px/1.5 tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
     display: block;
@@ -473,4 +651,4 @@ body {
           background-color: #df147f;
           color: #fff; }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=goodsdetail.css.map */
